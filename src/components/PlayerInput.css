@@ -1,0 +1,140 @@
+.player-input-container {
+  margin: 30px auto 15px;
+  max-width: 900px;
+  text-align: center;
+  margin-top: -1px;
+}
+
+.player-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.player-card {
+  border: 1px solid rgb(219, 219, 219);
+  background: #ffffff;
+  height: 160px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.player-card input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #2f80ed;
+  border: 1px solid #2f80ed;
+  background-color: #f7faff;
+}
+
+input[type="number"] {
+  width: 60%;
+  padding: 18px 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: border 0.2s ease;
+  background: rgb(238, 242, 247);
+}
+
+input[type="number"]:focus {
+  border-color: #2f80ed;
+}
+
+.player-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2d2d2d;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.eliminated-text {
+  color: rgb(223, 16, 16);
+  font-style: italic;
+  font-size: 16px;
+}
+
+.error-msg {
+  color: #d93025;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .player-inputs {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .player-card {
+    width: 45%;
+    /* 2 per row */
+    height: auto;
+    padding: 12px;
+  }
+
+  .player-name {
+    font-size: 16px;
+  }
+
+  input[type="number"] {
+    width: 80%;
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .eliminated-text {
+    font-size: 14px;
+  }
+
+  .error-msg {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .player-card {
+    width: 90%;
+    /* 1 per row for very small screens */
+  }
+}

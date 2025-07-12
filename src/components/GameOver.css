@@ -1,0 +1,125 @@
+ .game-over {
+   text-align: center;
+   padding: 50px 20px;
+   background: #f7f7f7;
+   border-radius: 10px;
+   width: 90%;
+   max-width: 500px;
+   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+ }
+
+ .game-over h1 {
+   font-size: 2.8rem;
+   color: #222;
+   margin-bottom: 10px;
+ }
+
+ .game-over h2 {
+   font-size: 2rem;
+   color: #2f80ed;
+   margin-bottom: 8px;
+   margin-top: 2px;
+ }
+
+ .game-over p {
+   color: #555;
+   margin-bottom: 20px;
+ }
+
+ .restart-button {
+   margin: 25px auto 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 12px 17px;
+   background: #fcb64d;
+   color: #1a1a1a;
+   border: none;
+   font-weight: bold;
+   font-size: 16px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: all 0.25s ease;
+   transform: translateY(0);
+   gap: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ .restart-button:hover {
+   background: #e9a936;
+   transform: scale(1.05);
+   transition: all 0.2s ease-in-out;
+ }
+
+ @keyframes fadeInScale {
+   0% {
+     opacity: 0;
+     transform: scale(0.95);
+   }
+
+   100% {
+     opacity: 1;
+     transform: scale(1);
+   }
+ }
+
+ .game-over {
+   animation: fadeInScale 0.5s ease-in-out both;
+ }
+
+ /* Tablets and small desktops */
+ @media (max-width: 768px) {
+   .game-over h1 {
+     font-size: 2.2rem;
+   }
+
+   .game-over h2 {
+     font-size: 1.6rem;
+   }
+
+   .restart-button {
+     font-size: 15px;
+     padding: 10px 16px;
+   }
+ }
+
+ /* Mobile phones */
+ @media (max-width: 480px) {
+   .game-over h1 {
+     font-size: 1.9rem;
+   }
+
+   .game-over h2 {
+     font-size: 1.4rem;
+   }
+
+   .restart-button {
+     font-size: 14px;
+     padding: 9px 14px;
+   }
+
+   .game-over {
+     padding: 35px 16px;
+     margin: 25px auto;
+   }
+ }
+
+ @media (max-width: 600px) {
+   .game-over {
+     padding: 35px 15px;
+     width: 95%;
+   }
+
+   .game-over h1 {
+     font-size: 2.2rem;
+   }
+
+   .game-over h2 {
+     font-size: 1.6rem;
+   }
+
+   .restart-button {
+     font-size: 14px;
+     padding: 10px 14px;
+   }
+ }

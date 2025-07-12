@@ -1,0 +1,23 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  background: rgb(238, 242, 247);
+  -webkit-font-smoothing: antialiased;
+}
+
+.start-wrapper {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  padding: 20px;
+}
+
+.gameover-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 16px;
+}
