@@ -46,3 +46,5 @@ A strategic multiplayer number game built with **React** where players compete b
 ## 👩‍💻 Developer
 Khushi Singh</br>
 Made with 💙 using React.js
+
+## Hello World! This is a test update.
